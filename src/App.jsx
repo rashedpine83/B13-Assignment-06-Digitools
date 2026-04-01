@@ -2,7 +2,7 @@
 import { Suspense, useState } from 'react'
 import './App.css'
 import Bannar from './Components/Bannar'
-import NavBar from './Components/Navbar'
+import NavBar from './Components/NavBar'
 import Rating from './Components/Rating'
 import ToolsCards from './Components/ToolsCards'
 import Cart from './Components/Cart'
