@@ -7,7 +7,7 @@ const Cart = ({carts, setCarts}) => {
 
     const handlepayment = () => {
         setCarts([]);
-        toast.success("Payment Successfull")
+        toast.success("Your Payment Successfull")
     }
 
     const handleDelete = (cart) =>{
