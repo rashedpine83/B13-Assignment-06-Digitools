@@ -7,7 +7,7 @@ const Bannar = () => {
   return (
     <div className='flex flex-col-reverse md:flex-row items-center container mx-auto my-12 gap-10 px-4'>
 
-      {/* LEFT CONTENT */}
+      {/* Left side of bannar */}
       <div className='w-full md:w-1/2 space-y-5 md:py-20 text-center md:text-left'>
 
         <button className='flex items-center gap-2 btn rounded-full bg-[#e1e7ff] text-[rgba(149,20,250,1)] mx-auto md:mx-0'>
@@ -38,7 +38,7 @@ const Bannar = () => {
 
       </div>
 
-      {/* RIGHT IMAGE */}
+      {/* Right side of bannar */}
       <div className='w-full md:w-1/2'>
         <img className='w-full max-w-md md:max-w-full mx-auto' src={BannarImage} alt="BannarImage" />
       </div>
