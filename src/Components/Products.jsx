@@ -45,7 +45,9 @@ const Products = ({card, carts, setCarts}) => {
                                     }
                                 </div>
                                 <div className="mt-auto">
-                                    <button onClick={handleBuy} className='btn w-full rounded-full text-white bg-linear-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] px-4 py-2'>
+                                    <button onClick={handleBuy} className={`${isBuy
+                                        ? "bg-green-500 text-white w-full rounded-full px-4 py-2"
+                                        : "btn w-full rounded-full text-white bg-linear-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] px-4 py-2"}`}>
                                       
                                         {isBuy ? "Purchased" : "Buy Now"}
                                     </button>
