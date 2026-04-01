@@ -1,4 +1,5 @@
 import React from 'react';
+import { IoCartOutline } from 'react-icons/io5';
 import { toast } from 'react-toastify';
 
 const Cart = ({carts, setCarts}) => {
@@ -22,10 +23,17 @@ const Cart = ({carts, setCarts}) => {
                 <h1>Your Cart</h1>
             </div>
             <div>
+                
                 {
-                    carts.length === 0 ? <div className='mb-5 max-w-6xl mx-auto shadow-[0_4px_20px_rgba(0,0,0,0.25)] rounded-lg'><p className=' p-10 font-bold text-2xl text-center text-red-600'>Cart is Empty</p></div> : 
-
-                    <div>
+                    
+                    carts.length === 0 
+                    ? <div className='mb-5 max-w-6xl mx-auto shadow-[0_4px_20px_rgba(0,0,0,0.25)] rounded-lg'>
+                        <div className='flex justify-center'>
+                        <IoCartOutline className='text-8xl'></IoCartOutline>
+                        </div>
+                        <p className=' p-10 pt-5 font-bold text-2xl text-center text-red-600'>Your Cart is Empty</p>
+                     </div> 
+                    : <div>
                 {
                     carts.map(cart => 
                     <div className='shadow-[0_4px_20px_rgba(0,0,0,0.25)] p-10 max-w-6xl mx-auto flex justify-between items-center rounded-lg'>
