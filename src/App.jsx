@@ -39,9 +39,9 @@ const [carts, setCarts] = useState([]);
       
       <div className="tabs tabs-box justify-center bg-transparent">
       
-        <input onClick={() => setActiveTab("Products")} type="radio" name="my_tabs_1" className = {`tab w-40 font-bold rounded-full ${activeTab==="Products" ? "bg-red-600 text-white" : ""}`} aria-label="Products" defaultChecked/>
+        <input onClick={() => setActiveTab("Products")} type="radio" name="my_tabs_1" className = {`tab w-40 font-bold rounded-full ${activeTab==="Products" ? "bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white" : ""}`} aria-label="Products" defaultChecked/>
       
-        <input onClick={() => setActiveTab("Cart")} type="radio" name="my_tabs_1" className= {`tab font-bold w-40 rounded-full ${activeTab === "Cart" ? "bg-red-600 text-white" : ""}`} aria-label={`Cart (${carts.length})`}/>
+        <input onClick={() => setActiveTab("Cart")} type="radio" name="my_tabs_1" className= {`tab font-bold w-40 rounded-full ${activeTab === "Cart" ? "bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white" : ""}`} aria-label={`Cart (${carts.length})`}/>
       </div>
 
       {activeTab === "Products" && <Suspense fallback={<p>Data Loading...</p>}> <ToolsCards ToolsPromise={ToolsPromise} carts={carts} setCarts={setCarts}></ToolsCards></Suspense>}
