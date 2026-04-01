@@ -20,7 +20,7 @@ const Products = ({card, carts, setCarts}) => {
     }
     return (
         <div>
-            <div className='shadow-[0_4px_20px_rgba(0,0,0,0.25)] p-5 flex flex-col h-full hover:scale-105  '>
+            <div className='shadow-[0_4px_20px_rgba(0,0,0,0.25)] p-5 flex flex-col h-full hover:scale-105'>
                             
                             <div className='flex justify-end'>
                                 
